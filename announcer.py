@@ -26,13 +26,15 @@ tg_session_filename = os.getenv("TELEGRAM_SESSION_FILENAME", "tg-sms-announcer")
 tw_account_sid = os.getenv("TWILIO_ACCOUNT_SID", "")
 tw_auth_token = os.getenv("TWILIO_AUTH_TOKEN", "")
 tg_client = TelegramClient(tg_session_filename, tg_api_id, tg_api_hash)
-#tg_client.start(bot_token=tg_bot_token)
 # tw_client = Client(tw_account_sid, tw_auth_token)
 
 async def main():
-  print("Starting main...")
-  await tg_client.start(bot_token=tg_bot_token)
-  print("Started. Getting me...")
+  print("Starting telegram to sms announcer...")
+  if bot_token:
+    await tg_client.start(bot_token=tg_bot_token)
+  else:
+    await tg_client.start()
+  print("Connected and logged in to Telegram.")
   me = await tg_client.get_me()
   print(f"Logged in as @{me.username}")
   await tg_client.run_until_disconnected()
