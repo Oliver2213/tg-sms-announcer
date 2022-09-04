@@ -41,4 +41,5 @@ async def main():
 async def handler(event):
   print(f"Received message from {event.message.post_author}: {event.message.message}.")
 
-asyncio.run(main())
+if __name__ == '__main__':
+  asyncio.run(main())
