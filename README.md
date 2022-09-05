@@ -8,8 +8,9 @@ Bridges messages sent to a telegram channel to a list of phone numbers (via sms 
 * Create a virtual environment and install the packages used:
 ```
 python -m venv .virtualenv
-pip install -r requirements.txt```
-* Run (or automate, dockerize, etc) python announcer.py
+pip install -r requirements.txt
+```
+* Then run (or automate, dockerize, etc) python announcer.py after activating the virtual environment in .virtualenv.
 
 ## Use as a bot vs. through your personal account
 Using a bot is recommended over your personal account, though either choice is fine. Bots have the advantage that if you ever leave the channel, this script won't stop functioning. Muting a channel may also silence messages (haven't tested), so using one ensures your changes don't affect the announcer.
