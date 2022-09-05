@@ -5,6 +5,10 @@ Bridges messages sent to a telegram channel to a list of phone numbers (via sms 
 ## Setup
 * Clone or fork this repository
 * Copy .env.example to .env and fill in the values.
+* Create a virtual environment and install the packages used:
+```
+python -m venv .virtualenv
+pip install -r requirements.txt```
 * Run (or automate, dockerize, etc) python announcer.py
 
 ## Use as a bot vs. through your personal account
