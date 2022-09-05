@@ -27,6 +27,7 @@ python -m asyncio
 from telethon import TelegramClient
 # Log into the API as your personal account, which has admin rights to the chat or channel you wish to add the bot to.
 # If you already have your API id and hash in a .env file, uncomment the lines below.
+# Otherwise, set 'tg_api_id' and 'tg_api_hash' manually
 #from dotenv import dotenv_values
 #config = dotenv_values(".env")
 #tg_api_id, tg_api_hash = values['TELEGRAM_API_ID'], values['TELEGRAM_API_HASH']
