@@ -2,6 +2,10 @@
 
 Bridges messages sent to a telegram channel to a list of phone numbers (via sms using Twilio).
 
+## Setup
+* Clone or fork this repository
+* Copy .env.example to .env and fill in the values.
+* Run (or automate, dockerize, etc) python announcer.py
 
 ## Use as a bot vs. through your personal account
 Using a bot is recommended over your personal account, though either choice is fine. Bots have the advantage that if you ever leave the channel, this script won't stop functioning. Muting a channel may also silence messages (haven't tested), so using one ensures your changes don't affect the announcer.
