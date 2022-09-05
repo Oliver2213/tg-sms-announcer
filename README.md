@@ -35,7 +35,7 @@ from telethon import TelegramClient
 # Otherwise, set 'tg_api_id' and 'tg_api_hash' manually
 #from dotenv import dotenv_values
 #config = dotenv_values(".env")
-#tg_api_id, tg_api_hash = values['TELEGRAM_API_ID'], values['TELEGRAM_API_HASH']
+#tg_api_id, tg_api_hash = config['TELEGRAM_API_ID'], config['TELEGRAM_API_HASH']
 client = TelegramClient('personal_tg', tg_api_id, tg_api_hash)
 cl.start() # connect and authenticate; should ask for phone number
 # Get the channel / chat and bot you want to use.
